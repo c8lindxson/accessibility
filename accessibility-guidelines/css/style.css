@@ -11,14 +11,14 @@
 }
 
 h1, .main-title {
-  font-size: 38px;
-  color: #989898;
+  font-size: x-large;
+  color: #49224a;
   font-weight: lighter;
   margin: 1.75rem auto 0.9rem auto
 }
 
 h2, .title {
-  font-size: 28px;
+  font-size: large;
   color: #b6b7b7;
   font-weight: lighter;
   padding-top: 35px;
@@ -26,7 +26,7 @@ h2, .title {
 }
 
 h3, .subtitle {
-  font-size: 20px;
+  font-size: medium;
   color: #b6b7b7;
   font-weight: normal;
   margin: 2rem 0 0.3rem 0;
@@ -34,7 +34,7 @@ h3, .subtitle {
 
 p, .content {
   color: black;
-  font-size: 12px;
+  font-size: small;
   line-height: 2rem;
 }
 

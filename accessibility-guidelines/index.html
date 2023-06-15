@@ -6,34 +6,37 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
     <script src="javascript/lib.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="header" id="top">
-    </div>
-    <div class="main">
+    <header class="header" id="top">
+    </header>
+    <main class="main">
       <h1>Accessibility Guidelines</h1>
-      <div class="title" id="introduction">Introduction</div>
-      <div class="content">The W3C created guidelines to help developpers build accessible apps. It's a set of four topics, labeled as the POUR principles. They describe the main philosophy behind accessibility and are completed with best practices and typical cases.</div>
-      <div class="content">This page sumarizes the essence of each principle, completed with one example each time. You can read the detailed version on the W3C website: <a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/">click here</a>.</div>
+      <h3 class="title" id="introduction">Introduction</h3>
+      <p class="content">The W3C created guidelines to help developpers build accessible apps. It's a set of four topics, labeled as the POUR principles. They describe the main philosophy behind accessibility and are completed with best practices and typical cases.</p>
+      <p class="content">This page sumarizes the essence of each principle, completed with one example each time. You can read the detailed version on the W3C website: <a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/">click here</a>.</p>
       <img src="images/pour.svg">
-      <div class="title" id="pour">The POUR principles</div>
-      <div class="subtitle">P for Perceivable</div>
+      <h2 class="title" id="pour">The POUR principles</h2>
+      <h3 class="subtitle">P for Perceivable</h3>
       <img src="images/perceivable.svg">
-      <div class="content">Create content that can be perceived by different senses. For example, use "alt" attributes in image tags to describe the scene. Images are part of the content, make it available for other senses than sight.</div>
-      <div class="subtitle">O for Operable</div>
+      <p class="content">Create content that can be perceived by different senses. For example, use "alt" attributes in image tags to describe the scene. Images are part of the content, make it available for other senses than sight.</p>
+      <h3 class="subtitle">O for Operable</h3>
       <img src="images/operable.svg">
-      <div class="content">Ensure that the user interface can be operated through a variety of tools, not only the mouse. For example, make sure that the user can navigate with a keyboard or an eyetracker.</div>
-      <div class="subtitle">U for Understandable</div>
+      <p class="content">Ensure that the user interface can be operated through a variety of tools, not only the mouse. For example, make sure that the user can navigate with a keyboard or an eyetracker.</p>
+      <h3 class="subtitle">U for Understandable</h3>
       <img src="images/understandable.svg">
-      <div class="content">Be clear and avoid confusion, make all the interactions predictable. For example, guide the user to correct the errors in a form.</div>
-      <div class="subtitle">R for Robust</div>
+      <p class="content">Be clear and avoid confusion, make all the interactions predictable. For example, guide the user to correct the errors in a form.</p>
+      <h3 class="subtitle">R for Robust</h3>
       <img src="images/robust.svg">
-      <div class="content">Maximize compatibility with a wide range of assistive technologie tools. For example, use title tags from h1 to h6 to structure the page content, screen readers ofter option to sumarize the squeletton of the page.</div>
-      <div class="title" id="feedback">Leave a comment</div>
+      <p class="content">Maximize compatibility with a wide range of assistive technologie tools. For example, use title tags from h1 to h6 to structure the page content, screen readers ofter option to sumarize the squeletton of the page.</p>
+      <h3 class="title" id="feedback">Leave a comment</h3>
       <form action="#">
         <p>Do you plan to code with accessibility in mind?</p>
-        <input type="radio" name="explanations" id="yes"> Yes
-        <input type="radio" name="explanations" id="no"> No
+        <input type="radio" name="explanations" id="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="explanations" id="no">
+        <label for="no">No</label>
         <p>What will you prioritize?</p>
         <input type="checkbox" name="subjects" id="styling">
         <label for="styling">Styling</label>
@@ -42,7 +45,7 @@
         <input type="checkbox" name="subjects" id="focus">
         <label for="focus">Focus</label>
         <label for="zoom">What zoom scale will you test?</label>
-        <input type="text" name="zoom" id="zoom">
+        <input type="number" name="zoom" id="zoom">
         <label for="when">What is the best time to integrate accessibility?</label>
         <select name="when" id="when">
           <option value="0">During design</option>
@@ -51,12 +54,13 @@
         </select>
         <label for="comment">Comment</label>
         <textarea name="comment" id="comment" cols="30" rows="10" class="error"></textarea>
+        <p class="error-message">Comment can't be blank</p>
         <input type="submit">
       </form>
-    </div>
-    <div class="footer">
+    </main>
+    <footer class="footer">
       <a href="#top" class="to-top"></a>
-    </div>
+    </footer>
     <nav class="close">
       <button class="toggle-nav"></button>
       <ul>
